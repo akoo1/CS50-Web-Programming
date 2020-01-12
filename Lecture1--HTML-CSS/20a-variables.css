@@ -1,0 +1,14 @@
+
+/* If we later on want to change the color of all the text on this page, we would need to change the color
+   property in every HTML tag, which is NOT EFFICIENT.  */
+
+ul {
+  font-size: 14px;
+  color: red;
+}
+
+
+ol {
+  font-size: 18px;
+  color: red;
+}

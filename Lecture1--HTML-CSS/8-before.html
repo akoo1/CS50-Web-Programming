@@ -1,0 +1,32 @@
+
+<!-- Pseudoelement selector -->
+
+<!-- A ‘pseudoelement’ is a way to affect certain parts of an HTML element. -->
+
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+       <title>My Web Page!</title>
+       <style>
+            /* It means for every anchor tag, before the content of that link, add this content, this symbol and "Click here" */
+            /* before is the pseudoelement */
+            a::before {
+                  content: "\21d2 Click here: ";
+                  font-weight: bold;
+            }
+       </style>
+  </head>
+
+
+  <body>
+      <ul>
+          <li><a href="#"> one link </a></li>
+          <li><a href="#"> another link </a></li>
+          <li><a href="#"> thrid link </a></li>
+      </ul>
+
+  </body>
+
+</html>

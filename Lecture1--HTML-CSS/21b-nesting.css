@@ -1,0 +1,13 @@
+/* Another powerful feature of Sass is that it allows you to use a nested structure like this to organize
+   the styling. */
+div {
+  font-size: 24px;
+}
+div p {
+  color: blue;
+}
+div ul {
+  color: green;
+}
+
+/*# sourceMappingURL=21b-nesting.css.map */

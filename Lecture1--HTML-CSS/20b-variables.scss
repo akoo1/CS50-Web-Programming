@@ -1,0 +1,31 @@
+
+/* Sass is a new language built on top of CSS, it's an extension to CSS, which gives it a little more power and
+   flexibility when designing CSS stylesheets and allows for the generation of stylesheets in a programmatic way.
+   Ultimately, Sass just makes writing CSS easier. */
+
+/* .scss is just the extension for a Sass file */
+
+/* Our web browsers are trained to understand CSS, but not Sass. Therefore, we need to convert the Sass file into
+   a CSS file. That's why there is a program called Sass that does that and it needs to be installed first.
+
+/* run "brew install sass/sass/sass" to install on Mac if you have homebrew installed already. */
+
+/* By running the command "sass 20b-variables.scss 20b-variables.css" on the terminal, it will compile the
+   .scss file into a .css file that my web browser is able to understand. */
+
+/* If recompiling gets annoying, run "sass --watch 20b-variables.scss:20b-variables.css" to automatically recompile
+  the .scss file to .css file whenever the .scss file is modified. */
+
+
+/* Assigning a color value to a variable allows us to use it anywhere in our program and change all them easily */
+$color: purple;
+
+ul {
+  font-size: 18px;
+  color: $color;
+}
+
+ol {
+  font-size: 24px;
+  color: $color;
+}

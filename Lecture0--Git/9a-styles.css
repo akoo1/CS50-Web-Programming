@@ -1,0 +1,20 @@
+
+/* This linked CSS file defines the style for the style2.html file */
+
+h1 {
+  color: blue;
+  text-align: center;
+}
+
+p {
+  color: red;
+}
+
+
+
+/* We have now seen 3 differnt ways that we can link CSS to the content of our HTML code
+     1. just by including that CSS code (CSS properties within style attributes) directly in the HTML code
+     2. factoring out the CSS code into the header of the HTML code, so that it applies to the whole Page
+     3. separate out the CSS code into a different file such that even there are many different HTML files,
+        they can all link to the same CSS file. (the most common way when it comes to large applications)
+*/

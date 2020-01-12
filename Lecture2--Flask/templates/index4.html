@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <title> Is it New Year? </title>
+    <style>
+        body {
+          text-align: center;
+          font-size: 100px;
+        }
+
+    </style>
+  </head>
+
+
+<!-- Jinja2 allows us to use Pyton like syntax such as conditions, loops inside our HTML files. -->
+<!-- SO we are able to dynamically generate different HTML code depending on the vlaues of these variables -->
+
+  <body>
+        {% if new_year %}
+            <h1> Yes! Happy New Year! </h1>
+        {% else %}
+            <h1> NO </h1>
+        {% endif %}
+  </body>
+
+</html>
