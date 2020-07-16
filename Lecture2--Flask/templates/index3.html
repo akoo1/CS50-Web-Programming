@@ -12,7 +12,11 @@
      Flask comes with Jinja2 -->
 
   <body>
-      <h1> {{ headline }} </h1>      <!-- The value of this variable is whatever in the python file that calls it -->
+      <h1> {{ headline }} </h1>      <!-- Using {{ headline }} makes the word headline a parameter of the render_template function,
+                                          thus we can pass an argument to render_template for the headline parameter.
+
+                                          render_template("index3.html", headline = my_headline) -->
+
   </body>
 
 </html>

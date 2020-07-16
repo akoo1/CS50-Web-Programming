@@ -9,11 +9,11 @@
 
 {% block body %}
 
-  <!-- what the action attribute does is that when you hit the submit button, it will send this form to the hello function.
+  <!-- what the action attribute does is that when you hit the submit button, it will send this form to the greet function.
 
        The "method" attribute is how the HTTP request to submit the form should be made. The default method is "get", which is
        what browsers make when a URL is entered. When data is being submitted, however, "post" should be used. -->
-  <form action=" {{ url_for('hello') }}" method="post">
+  <form action=" {{ url_for('greet') }}" method="post">
       <input type="text" name="name" placeholder="Enter Your Name">
       <button> Submit </button>
   </form>

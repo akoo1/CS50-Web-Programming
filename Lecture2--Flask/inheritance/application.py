@@ -11,5 +11,13 @@ def homepage():
 
 
 @my_app.route("/more")
-def more():
+def more_stuff():
     return render_template("more.html")
+
+
+
+
+
+
+if __name__ == '__main__':
+    my_app.run(debug=True, use_reloader=True)

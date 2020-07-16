@@ -1,10 +1,27 @@
 
+<!-- In HTML, span and div tags are used to define different sections or parts of a web page -->
+
+<!-- div is a block element -->
+<!-- span is an in-line element -->
+
+<!-- divs should be used to wrap sections of a document, while spans should be used to wrap small portions of text, images -->
+
+<!-- The id and class attributes are used to give different HTML tags names, they can identify any tags, not just div and span. -->
+
+<!-- ids are unique, and has to start with alphabets. -->
+<!-- classes don't have to be unique, many tags can have the same class name -->
+
+<!-- The id attribute is used by CSS and JavaScript to style/select a specific element -->
+<!-- The id attribute is also used to create HTML bookmarks -->
+<!-- JavaScript can access an element with a specific id with the getElementById() method --> 
+
 <!DOCTYPE html>
 
 <html>
 
   <head>
-      <title>My Web Page!</title>
+      <title> My Web Page! </title>
+
       <style>
         #top {
           font-size: 36px;
@@ -26,8 +43,8 @@
   </head>
 
 
-  <body>                  <!-- div and span kind of works like frame in tkinter -->
-        <div id="top">    <!-- id and class are just giving those new sections a name -->
+  <body>
+        <div id="top">
             This is the <span class="name"> top </span> of my web page.
         </div>
 

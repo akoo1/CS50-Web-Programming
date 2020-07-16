@@ -1,19 +1,19 @@
 
 <!-- Pseudoelement selector -->
 
-<!-- A ‘pseudoelement’ is a way to affect certain parts of an HTML element. -->
+<!-- A ‘pseudo-element’ is a way to affect certain parts of an HTML element. -->
 
 <!DOCTYPE html>
 
 <html>
 
   <head>
-       <title>My Web Page!</title>
+       <title> My Web Page! </title>
        <style>
-            /* It means for every anchor tag, before the content of that link, add this content, this symbol and "Click here" */
-            /* before is the pseudoelement */
+            /* It means for every anchor tag, before the content of that link, add this content. A symbol and "Click here" */
+            /* before is the pseudo-element */
             a::before {
-                  content: "\21d2 Click here: ";
+                  content: "\21d2  Click here: ";
                   font-weight: bold;
             }
        </style>
@@ -22,9 +22,11 @@
 
   <body>
       <ul>
-          <li><a href="#"> one link </a></li>
-          <li><a href="#"> another link </a></li>
-          <li><a href="#"> thrid link </a></li>
+          <!-- An anchor tag without the href is not clickable.
+             Just passing "#" to the href makes the text clickable, but takes you nowhere. -->
+          <li> <a> one link </a> </li>
+          <li> <a href="#"> another link </a> </li>
+          <li> <a href="#"> thrid link </a> </li>
       </ul>
 
   </body>
