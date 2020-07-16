@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title> Alfred's Web Page </title>
+  </head>
+
+
+
+  <body>
+    <p> This is just a paragraph ~ This is just a paragraph ~ This is just a paragraph ~ This is just a paragraph ~
+        This is just a paragraph ~ This is just a paragraph ~ This is just a paragraph ~ This is just a paragraph ~
+        This is just a paragraph ~ This is just a paragraph ~ This is just a paragraph ~ This is just a paragraph ~  </p>
+
+    <!-- The select tag will create a drop down menu -->
+    <select>
+      <option value="xx-large"> xx-large </option>
+      <option value="x-large"> x-large </option>
+      <option value="large"> large </option>
+      <option selected value="initial"> initial </option>
+      <option value="small"> small </option>
+      <option value="x-small"> x-small </option>
+      <option value="xx-small"> xx-small </option>
+    </select>
+
+    <script>
+      // create a change event for the select tag.
+      document.querySelector("select").onchange = function() {
+        document.querySelector("body").style.fontSize = this.value
+      }
+
+    </script>
+
+
+
+
+  </body>
+
+
+</html>

@@ -1,0 +1,43 @@
+
+
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title> Alfred's Web Page </title>
+
+  </head>
+
+
+
+  <body>
+
+    <button id="r" type="button" > R </button>
+    <button id="g" type="button" > G </button>
+    <button id="b" type="button" > B </button>
+
+    <script>
+
+      // Declare a variable that will take the whole body tag
+      let body = document.querySelector("body");
+
+      // When the "r" button is clicked, execute the following function, and the same for "g" and "b"
+      // onclick will create a click event. We can associate an event with a function, so the function is invoked by the event
+      // In JS, we don't nee to give a function a name of we won't use it again
+      document.querySelector("#r").onclick = function() {
+        body.style.backgroundColor = "red";
+      };
+      document.querySelector("#g").onclick = function() {
+        body.style.backgroundColor = "green";
+      };
+      document.querySelector("#b").onclick = function() {
+        body.style.backgroundColor = "blue";
+      };
+
+
+    </script>
+
+
+  </body>
+
+</html>

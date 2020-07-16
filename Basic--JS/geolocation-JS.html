@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <title> Alfred's Web Page </title>
+  </head>
+
+
+  <body>
+
+    <script>
+
+      navigator.geolocation.getCurrentPosition(
+
+        function(position) {
+        document.write("latitude: " + position.coords.latitude + ", " + "longitude: " + position.coords.longitude)
+      }
+    )
+    </script>
+
+
+  </body>
+
+</html>

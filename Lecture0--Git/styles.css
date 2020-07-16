@@ -1,0 +1,23 @@
+
+/* This linked CSS file defines the style for the 9-style2.html file */
+
+h1 {
+  color: blue;
+  text-align: center;
+}
+
+p {
+  color: purple;
+}
+
+
+
+/* We have now seen 3 differnt ways that we can add CSS to the content of our HTML code
+    1. Just by adding a "style" attribute inside any HTML tag, and specify the CSS properties for the "style" attribute
+    2. *Factoring out the CSS code by adding a <style> tag inside the header of the HTML code, so that it applies to the whole Page
+    3. Separate out the CSS code into a CSS file such that even there are many different HTML files,
+       they can all link to the same CSS file. (the most common way when it comes to large applications)
+
+    * For the "style" tag, CSS can not only let you apply style properties directly to HTML tags,
+      but also using classes or ids that are associated to different HTML tags
+*/

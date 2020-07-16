@@ -1,0 +1,37 @@
+
+<!-- Using a little bit of JavaScript to make this HTML a little bit more interactive -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+
+      <script>
+
+        function greet() {
+          // Declare a variable.  "document" refers to the whole web page, and it's method "querySelector" lets you select an object (tag) in the DOM tree,
+          // and gets its data member "value".
+          let name = document.querySelector('#name').value;
+          // The alert functon will pop up a window with a message in it.
+          alert('hello, ' + name)
+        }
+
+      </script>
+
+
+      <title> Alfred's Web Page</title>
+
+    </head>
+
+
+    <body>
+
+      <h1> I am a headline </h1>
+
+      <form onsubmit="greet(); return false">
+        <!-- Creates an input text field. The autofocus will put the cursor right at the text box when the web page is loaded. -->
+        <input autocomplete="off" autofocus id="name" type="text">
+        <input type="submit">            <!-- Creates a submit button -->
+      </form>
+
+    </body>
+</html>
